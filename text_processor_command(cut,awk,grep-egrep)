@@ -1,0 +1,48 @@
+cut Command: to cut the output and display spacefic word  
+
+1)to display one word word
+cut -c1 fileame
+2) dispay two word
+cut -c1,3 filename
+3) display range of word
+cut -c1-3 filename
+4) display word from specific output
+ls -l | cut -c1
+5) display the filed without delimator like :
+cut -d: -f 3 directory or file (example: /etc/passwd)
+
+awk command: Display spacefic filed
+
+1) to display 1 or 2 filed 
+awk '{print $2,$3}' filename
+2) to display last colum
+awk '{print $NF}' filename
+3) to display file content with serial number
+awk '{print NR $0}' filename
+4) to display file content with serial number and then space
+awk '{print NR, $0}' filename
+5) to display file content with serial number and colon space
+awk '{print NR ": " $0}' filename
+6) to display filed when dont have space between the filed
+awk -F, '{print $1}' passwd
+7) condition: when you want to display salary which is grater than 10000
+awk '{if($4>10000) print $0}' filename
+
+
+grep command: to display specific keyword 
+
+1)to display one keyword
+grep keyword filename
+
+2) to display keword from the file stre under directory ( you can use any command od below both)
+cat /etc/passwd | grep tejas
+grep tejas /etc/passwd
+
+3) other use of grep
+grep -i keyword filename ( reguraly use this case sensitie)
+grep -n keyword filename ( to check keyword with feild no)
+grep -c keyword filename ( to check how may times specific kewords comes in perticular file)
+grep -v keyword filename  ( it display all other keyword escape mentioned in command)
+
+4) egrep command
+egrep "first keyword|second keyword" filename (to check two keyword at time)
