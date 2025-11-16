@@ -34,12 +34,12 @@ grep command: to display specific keyword
 1)to display one keyword
 grep keyword filename
 
-2) to display keword from the file stre under directory ( you can use any command od below both)
+2) to display keword from the file under directory ( you can use any command from below )
 cat /etc/passwd | grep tejas
 grep tejas /etc/passwd
 
 3) other use of grep
-grep -i keyword filename ( reguraly use this case sensitie)
+grep -i keyword filename ( reguraly use this case sensitive)
 grep -n keyword filename ( to check keyword with feild no)
 grep -c keyword filename ( to check how may times specific kewords comes in perticular file)
 grep -v keyword filename  ( it display all other keyword escape mentioned in command)
