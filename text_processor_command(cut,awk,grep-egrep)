@@ -42,7 +42,7 @@ grep tejas /etc/passwd
 grep -i keyword filename ( reguraly use this case sensitive)
 grep -n keyword filename ( to check keyword with feild no)
 grep -c keyword filename ( to check how may times specific kewords comes in perticular file)
-grep -v keyword filename  ( it display all other keyword escape mentioned in command)
+grep -v keyword filename  ( show all lines that do NOT contain the keyword)
 
 4) egrep command
 egrep "first keyword|second keyword" filename (to check two keyword at time)
